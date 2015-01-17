@@ -1,11 +1,20 @@
+<div ng-controller='LinksController'>
 <div id='container' ng-init>
   <!-- Your html here -->
   <div class='info'>
-    <div class='visits'><span class='count'>{{model.visits}}</span>Visits</div>
-    <div class='title'>{{model.title}}</div>
+    <!-- <div class='visits'><span class='count'>{{model.visits}}</span>Visits</div> -->
+    <!-- <div class='title' ng-model='model.url'>{{model.title}}</div> -->
     <div class='original'>{{model.url}}</div>
-    <a href='{{base_url}}/{{code}}'>{{model.base_url}}/{{model.code}}</a>
+    <!-- <a href='{{base_url}}/{{code}}'>{{model.base_url}}/{{model.code}}</a> -->
   </div>
 
+  <h1> Links </h1>
+  <button ng-click='getLinks()'>Get Links</button>
 
+  <form name="LinksForm" ng-submit='postLinks()'>
+    <input type='text' ng-model='link'>
+    <button>Shorten Link</button>
+  </form>
+
+</div>
 </div>

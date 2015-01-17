@@ -5,11 +5,12 @@ angular.module('shortly.links', [])
   angular.extend($scope, Links);
   // link properties
   $scope.model = {
-      url: 'url',
-      base_url: 'base_url',
-      timeStamp: 'timeStamp',
-      code: 'code',
-      visits: 'visits',
-      title: 'title'
+      url: 'http://www.google.com'
+      // base_url: 'base_url',
+      // timeStamp: 'timeStamp',
+      // code: 'code',
+      // visits: 'visits',
+      // title: 'title'
   }
 });
+
