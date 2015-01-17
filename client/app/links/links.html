@@ -1,3 +1,11 @@
-<div id='container'>
+<div id='container' ng-init>
   <!-- Your html here -->
+  <div class='info'>
+    <div class='visits'><span class='count'>{{model.visits}}</span>Visits</div>
+    <div class='title'>{{model.title}}</div>
+    <div class='original'>{{model.url}}</div>
+    <a href='{{base_url}}/{{code}}'>{{model.base_url}}/{{model.code}}</a>
+  </div>
+
+
 </div>
